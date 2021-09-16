@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 public class Email {
 	public static void main(String[] args) {
 
-		String email = "@bridgelabz";
-		String pattern = "@[a-zA-Z]+"; // regular expression for validating second mandatory part
+		String email = ".co";
+		String pattern = "\\.[a-z]{2,4}";  // regular expression for validating third mandatory part
 		System.out.println(Pattern.matches(pattern, email));
 	}
 }
